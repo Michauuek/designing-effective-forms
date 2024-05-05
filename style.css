@@ -1,3 +1,29 @@
 .modal {
     background: #c6d0ff7a;
 }
+
+
+/*.custom-icon {*/
+/*    cursor: pointer;*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    padding: 5px 10px;*/
+/*}*/
+
+/*.custom-icon i {*/
+/*    margin-right: 8px;*/
+/*}*/
+
+/*.form-check-input {*/
+/*    display: none;*/
+/*}*/
+
+/*.form-check-input:checked + .custom-icon {*/
+/*    background-color: #e0e0e0;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+
+input.is-invalid {
+    border-color: red;
+}

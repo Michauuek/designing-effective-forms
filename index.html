@@ -25,10 +25,7 @@
                 <label for="lastName" class="form-label">Nazwisko</label>
                 <input type="text" class="form-control" id="lastName" placeholder="Wpisz nazwisko" required>
             </div>
-            <div class="mb-3">
-                <label for="street" class="form-label">Ulica</label>
-                <input type="text" class="form-control" id="street" placeholder="Wpisz ulicę" required>
-            </div>
+
             <div class="mb-3">
                 <label for="country" class="form-label">Kraj</label>
                 <select class="form-select" id="country" required>
@@ -54,26 +51,85 @@
                 <input type="text" class="form-control" id="city" placeholder="Wpisz miasto" required>
             </div>
             <div class="mb-3">
+                <label for="street" class="form-label">Ulica</label>
+                <input type="text" class="form-control" id="street" placeholder="Wpisz ulicę" required>
+            </div>
+            <div class="mb-3">
                 <label for="zipCode" class="form-label">Kod pocztowy</label>
                 <input type="text" class="form-control" id="zipCode" placeholder="Wpisz kod pocztowy" required>
             </div>
+<!--            <div class="mb-3">-->
+<!--                <label for="shippingMethod" class="form-label">Rodzaj przesyłki</label>-->
+<!--                <select class="form-select" id="shippingMethod" required>-->
+<!--                    <option value="">Wybierz rodzaj przesyłki</option>-->
+<!--                    <option value="DPD">DPD</option>-->
+<!--                    <option value="InPost">InPost</option>-->
+<!--                </select>-->
+<!--            </div>-->
             <div class="mb-3">
                 <label for="shippingMethod" class="form-label">Rodzaj przesyłki</label>
-                <select class="form-select" id="shippingMethod" required>
-                    <option value="">Wybierz rodzaj przesyłki</option>
-                    <option value="DPD">DPD</option>
-                    <option value="InPost">InPost</option>
-                </select>
+                <div id="shippingMethod" class="d-flex align-items-center ">
+                    <div class="form-check form-check-inline mr-3">
+                        <input type="radio" name="shippingMethod" id="dpd" value="DPD" required>
+                        <label class="form-check-label" for="dpd">DPD</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="shippingMethod" id="inpost" value="InPost" required>
+                        <label class="form-check-label" for="inpost">InPost</label>
+                    </div>
+                </div>
             </div>
+
+<!--            <div class="mb-3">-->
+<!--                <label for="paymentMethod" class="form-label">Rodzaj płatności</label>-->
+<!--                <select class="form-select" id="paymentMethod" required>-->
+<!--                    <option value="">Wybierz rodzaj płatności</option>-->
+<!--                    <option value="karta">Karta</option>-->
+<!--                    <option value="blik">BLIK</option>-->
+<!--                    <option value="pośrednik">Pośrednik płatności</option>-->
+<!--                </select>-->
+<!--            </div>-->
+
+
             <div class="mb-3">
                 <label for="paymentMethod" class="form-label">Rodzaj płatności</label>
-                <select class="form-select" id="paymentMethod" required>
-                    <option value="">Wybierz rodzaj płatności</option>
-                    <option value="karta">Karta</option>
-                    <option value="blik">BLIK</option>
-                    <option value="pośrednik">Pośrednik płatności</option>
-                </select>
+                <div id="paymentMethod" class="d-flex align-items-center ">
+                    <div class="form-check form-check-inline mr-3">
+                        <input type="radio" name="paymentMethod" id="karta" value="karta" required>
+                        <label class="form-check-label" for="karta">karta</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="paymentMethod" id="blik" value="blik" required>
+                        <label class="form-check-label" for="blik">blik</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="paymentMethod" id="przelewy24" value="przelewy24" required>
+                        <label class="form-check-label" for="przelewy24">przelewy24</label>
+                    </div>
+                </div>
             </div>
+
+<!--            <div class="mb-3">-->
+<!--                <label for="paymentMethod" class="form-label">Rodzaj płatności</label>-->
+<!--                <div id="paymentMethod">-->
+<!--                    <div class="form-check form-check-inline">-->
+<!--                        <input class="form-check-input" type="radio" name="paymentMethod" id="karta" value="karta" required hidden>-->
+<!--                        <label class="form-check-label custom-icon" for="karta">-->
+<!--                            <i class="fa fa-credit-card"></i> Karta </label>-->
+<!--                    </div>-->
+<!--                    <div class="form-check form-check-inline">-->
+<!--                        <input class="form-check-input" type="radio" name="paymentMethod" id="blik" value="blik" required hidden>-->
+<!--                        <label class="form-check-label custom-icon" for="blik">-->
+<!--                            <i class="fa fa-mobile"></i> BLIK </label>-->
+<!--                    </div>-->
+<!--                    <div class="form-check form-check-inline">-->
+<!--                        <input class="form-check-input" type="radio" name="paymentMethod" id="posrednik" value="pośrednik" required hidden>-->
+<!--                        <label class="form-check-label custom-icon" for="posrednik">-->
+<!--                            <i class="fa fa-university"></i> Pośrednik płatności </label>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
 
             <!-- Dodatkowe pola, np. dane do faktury -->
             <div class="mb-3">
