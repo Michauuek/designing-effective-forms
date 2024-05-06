@@ -15,24 +15,26 @@
 
 <body>
     <div class="container">
-        <h1>Uzupełnij formularz</h1>
         <form id="form">
-            <div class="mb-3">
-                <label for="firstName" class="form-label">Imię</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Wpisz imię" required>
-            </div>
-            <div class="mb-3">
-                <label for="lastName" class="form-label">Nazwisko</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Wpisz nazwisko" required>
+            <div class="row mb-1">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Imię</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Wpisz imię" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Nazwisko</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Wpisz nazwisko" required>
+                </div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-1">
                 <label for="country" class="form-label">Kraj</label>
-                <select class="form-select" id="country" required>
-                    <option value="">Wybierz kraj</option>
+                <input type="text" autoComplete="on" list="country-list" id="country" class="form-control">
+                <datalist id="country-list">
                     <!-- Options will be filled by JavaScript -->
-                </select>
+                </datalist>
             </div>
+
             <div class="row mb-3">
                 <label for="phoneNumber" class="form-label">Numer telefonu komórkowego</label>
                 <div class="input-group">
@@ -46,14 +48,17 @@
                         required>
                 </div>
             </div>
-            <div class="mb-3">
-                <label for="city" class="form-label">Miasto</label>
-                <input type="text" class="form-control" id="city" placeholder="Wpisz miasto" required>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="city" class="form-label">Miasto</label>
+                    <input type="text" class="form-control" id="city" placeholder="Wpisz miasto" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="street" class="form-label">Ulica</label>
+                    <input type="text" class="form-control" id="street" placeholder="Wpisz ulicę" required>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="street" class="form-label">Ulica</label>
-                <input type="text" class="form-control" id="street" placeholder="Wpisz ulicę" required>
-            </div>
+
             <div class="mb-3">
                 <label for="zipCode" class="form-label">Kod pocztowy</label>
                 <input type="text" class="form-control" id="zipCode" placeholder="Wpisz kod pocztowy" required>

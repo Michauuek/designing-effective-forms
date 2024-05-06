@@ -58,7 +58,8 @@ async function fetchAndFillCountries() {
         }
         const data = await response.json();
         const countries = data.map(country => country.name.common);
-        countryInput.innerHTML = countries.map(country => `<option value="${country}">${country}</option>`).join('');
+        const countryInput = document.getElementById('country-list');
+        countryInput.innerHTML = countries.map(country => `<option value="${country}">`).join('');
     } catch (error) {
         console.error('Wystąpił błąd:', error);
     }
